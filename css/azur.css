@@ -1,0 +1,234 @@
+/**
+ * Design Elements - additional  CSS for the Arctic template
+ * @author Marco Krage <marco@my-azur.de>
+ */
+
+/* ----- General Elements ----- */
+
+* { 
+  -moz-box-sizing: border-box; 
+       box-sizing: border-box; 
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+  color: #333333;
+  font-family: cambria,georgia,times,serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #fff;
+	-webkit-hyphens: auto;
+		 -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;	
+}
+
+a {
+  color: #47a;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+a:hover,a:focus,a:active {
+	text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,a:active {
+  outline: 0;
+}
+
+hr { 
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+	height: 1px;
+}
+
+hr.gardient { 
+	color: transparent;
+	background-color: transparent;
+	clear: both;
+	border: 0; 
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0)); 
+}
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4 {
+    color: #222222;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 1.5em 0 0.5em;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle
+}
+/**
+* blockquote
+*/
+blockquote {
+  border-left: 8px solid #ccc;
+  color: #444;
+  margin: 1em 0 1.5em;
+  padding: 0 10px 0 20px;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+/**
+* Code & Pre ect.
+*/
+pre,code,kbd,samp {
+  font-family: consolas,monospace,x;
+  font-size: 1em;
+  /*color: #d14;*/
+}
+
+pre {
+  white-space: pre;
+  overflow-x: auto;
+  padding: 1.25em;
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  margin: 1.7143em 0;
+  font-size: .875em;
+  background: #fcfcfc;
+  line-height: 120%;
+	max-height: 600px;
+}
+
+kbd {
+  -moz-border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  color: #333;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 0 .1em;
+  padding: .1em .4em;
+  text-shadow: 0 1px 0 #fff;
+  vertical-align: text-top;
+}
+
+code {
+  color: #d14;
+}
+
+/**
+* Formular
+*/
+textarea {
+  resize: vertical;
+}
+
+dl.code dd {
+  margin:0;
+}
+
+table {
+    border: 1px solid #8CACBB;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+
+th, td {
+    border: 1px solid #8CACBB;
+    margin: 0;
+    padding: 0.3em 0.5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.turncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.hide, .only-print {
+  display:none;
+}
+
+
+/**
+* Clearfix
+*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* For IE 6/7 only */
+/* Include this rule to trigger hasLayout and contain floats.*/
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+p, .section {
+margin: 1em 0;
+}
+
+
+
+#page {
+  margin: 0 auto 1em auto;
+  padding: 0 30px;
+  max-width: 960px;
+  overflow: hidden;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*CSS3 Media Queries for Responsiveness 
+/*-----------------------------------------------------------------------------------*/
+/* tablets in landscape mode */
+@media screen and (max-width: 1024px) {
+/*body:before{content: "tablets in landscape";}*/
+}
+/* --- tablets in portrait mode --- */
+@media screen and (max-width: 768px) {
+/*body:before{content: "tablets in portrait";}*/
+}
+/* --- smartphones in landscape mode --- */
+@media screen and (max-width: 480px) {
+/*body:before{content: "smartphones in landscape";}*/
+}
+/* --- smartphones in portrait mode --- */
+@media screen and (max-width: 320px) {
+/*body:before{content: "smartphones in portrait";}*/
+}

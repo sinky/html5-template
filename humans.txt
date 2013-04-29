@@ -1,0 +1,14 @@
+/* TEAM */
+	Marco Krage
+	www.my-azur.de
+	@sinky
+
+/* THANKS */
+
+		
+
+/* SITE */
+	Last update:2012/02/04
+	Language: Deutsch
+	Doctype:HTML5
+	IDE: Notepad++, FileZilla
