@@ -8,7 +8,7 @@
 		
 
 /* SITE */
-	Last update:2012/02/04
+	Last update:2014/09/01
 	Language: Deutsch
 	Doctype:HTML5
 	IDE: Notepad++, FileZilla
