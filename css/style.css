@@ -21,8 +21,8 @@ body {
           hyphens: auto;	
 }
 
-a {
-  color: #47a;
+a, a:visited {
+  color: #26b;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
      -moz-transition: all 0.2s ease-in-out;
