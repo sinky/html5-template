@@ -1,5 +1,4 @@
-my personal HTML5 starting template
-========================
-LICENSE
----------
-http://marco.mit-license.org/
+# my personal HTML5 starting template
+
+## License
+MIT http://marco.mit-license.org/
