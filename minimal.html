@@ -6,16 +6,43 @@
   <title>HTML 5 Template</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <style></style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <style>
+[v-cloak] {
+  display: none;
+}
+html {
+  overflow-y: scroll;
+}
+	</style>
 </head>
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js"></script>
+<div id="app"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script>
+var app = new Vue({
+  el: '#app',
+  data: function() {
+    return {
+      items: []
+    }
+  },
+	mounted: function() {
+	},
+	methods: {
+	},
+	computed: {
+	},
+	filters: {
+	}
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(function(){
-
 });
 </script>
 </body>
