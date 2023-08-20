@@ -13,18 +13,23 @@
 }
 html {
 	overflow-y: scroll;
+	font-family: system-ui, sans-serif;
 }
 	</style>
 </head>
 <body>
 
-<div id="app" v-cloak></div>
+<div id="app" v-cloak>
+	
+</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.global.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
 <script>
-var app = new Vue({
-	el: '#app',
+var app;
+
+const { createApp, nextTick } = Vue
+app = createApp({
 	data: function() {
 		return {
 			items: []
@@ -44,16 +49,8 @@ var app = new Vue({
 	methods: {
 	},
 	computed: {
-	},
-	filters: {
 	}
-});
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(function(){
-});
+}).mount('#app');
 </script>
 </body>
 </html>
